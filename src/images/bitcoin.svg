@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150.061" height="150.061" viewBox="0 0 150.061 150.061">
+  <g id="icons8-bitcoin" transform="translate(-4 -4)">
+    <path id="Path_36" data-name="Path 36" d="M154.061,79.031A75.031,75.031,0,1,1,79.031,4,75.039,75.039,0,0,1,154.061,79.031Z" fill="#ffc107"/>
+    <path id="Path_37" data-name="Path 37" d="M17,89.031V14H47.759q13.562,0,20.558,5.233t7,15.329a17.151,17.151,0,0,1-2.8,9.716A16.27,16.27,0,0,1,64.7,50.435a15.669,15.669,0,0,1,9.011,5.834,17.223,17.223,0,0,1,3.316,10.707q0,10.816-6.858,16.383T50.632,89.031ZM32.006,44.012H48.374C56.113,43.881,60,40.921,60,34.84q0-5.1-2.945-7.342t-9.293-2.243H32.006Zm0,11.255V77.776H50.178c3.605,0,11.84-1.759,11.84-9.788s-4.19-12.62-11.255-12.721Z" transform="translate(35.77 27.515)" fill="#fff8e1"/>
+    <path id="Path_38" data-name="Path 38" d="M20,11H31.255V29.758H20Z" transform="translate(44.024 19.261)" fill="#fff8e1"/>
+    <path id="Path_39" data-name="Path 39" d="M25,11H36.255V29.758H25Z" transform="translate(57.782 19.261)" fill="#fff8e1"/>
+    <path id="Path_40" data-name="Path 40" d="M20,32H31.255V50.758H20Z" transform="translate(44.024 77.043)" fill="#fff8e1"/>
+    <path id="Path_41" data-name="Path 41" d="M25,32H36.255V50.758H25Z" transform="translate(57.782 77.043)" fill="#fff8e1"/>
+  </g>
+</svg>

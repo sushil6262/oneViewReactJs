@@ -1,0 +1,256 @@
+.row.customRow {
+    margin: 0;
+  }
+  
+  .customBlue {
+    background-color: #1A75BC;
+    text-align: center;
+  }
+  
+  .customLogo {
+    width: 38%;
+    padding-top: 70px;
+    padding-left: 70px;
+  }
+  @media screen and (max-width: 768px) {
+    .customLogo {
+        width: 20%;
+        padding-top: 0;
+        padding-left: 0;
+      }
+  }
+  
+  .heading1st {
+    font-size: 57px;
+    font-weight: 900;
+    margin: 0;
+    display: block;
+    padding-left: 70px;
+  }
+  @media screen and (max-width: 768px) {
+    .heading1st {
+        font-size:16px;
+        padding-left: 0;
+      }
+  }
+  
+  .heading2nd {
+    font-size: 35px;
+    margin: 0;
+    padding-left: 70px;
+  }
+  @media screen and (max-width: 768px) {
+    .heading2nd {
+        font-size:16px;
+        padding-left: 0;
+      }
+  }
+  
+
+  
+  .Customtitle {
+    color: white;
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .blueBox {
+    padding-top: 20px;
+  }
+  
+  .custmHR {
+    border-top: 1px solid #fff;
+  }
+  @media screen and (max-width: 768px) {
+    .custmHR {
+        margin:4px;
+      }
+  }
+  @media screen and (max-width: 768px) {
+    .cardBody {
+        padding: 0;
+      }
+  }
+  
+  .custumPara {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .firstLayout {
+    height: 100%;
+    scroll-snap-align: start;
+    padding-bottom: 12px;
+    min-height: 100vh;
+  }
+  .firstLayoutAnimation {
+    height: 100%;
+    scroll-snap-align: start;
+    padding-bottom: 12px;
+    min-height: 100vh;
+    transition: all 500ms;
+    margin-top:-100vh;
+  }
+  @media screen and (max-width: 768px) {
+    .firstLayout {
+        height:100%;
+        text-align: center;
+        padding-top: 16px;
+    }
+  }
+  
+  .customDownNavigation {
+    cursor: pointer;
+  }
+  
+  .secondLayout {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    height: 100%;
+  }
+ 
+  .secondLayoutAnimation {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    height: 100%;
+    transition: all 500ms;
+    margin-top:-100vh;
+  }
+  
+  .Custompara {
+    font-size: 12px;
+  }
+  .orcode{
+      width: 160px;
+  }
+  
+  
+  .imglogo {
+    width: 74px;
+    display: block;
+    /* position: absolute; */
+    padding-top: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: all 500ms;
+  }
+  
+  .inputContent {
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+  }
+  
+  .ThirdLayout {
+    height: 100%;
+    min-height: 100vh;
+    scroll-snap-align: start;
+
+  }
+  
+  .ThirdLayoutAnimation {
+    height: 100%;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    transition: all 500ms;
+    margin-top:-100vh;
+  }
+  
+  .paymentImg {
+    height: 50px;
+  }
+  
+  .Customtext {
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .Customtext {
+        font-size: 15px;
+        text-align: center;
+        margin: 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .tokenValuestyle {
+        font-size: 14px;
+    }
+  }
+  
+  .customCard {
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    transition: all 500ms;
+  }
+  .customCard:hover{
+      padding: 8px;
+      background-color:#dcdcdc;
+      box-shadow: 0 0 4px 1px #ccc;
+      transition: all 500ms;
+  }
+  
+  .Customtext2 {
+    margin-bottom: 4rem;
+  }
+  
+  .fourthLayout {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    height: 100%;
+  }
+
+  .fourthLayoutAnimation {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    height: 100%;
+    transition: all 500ms;
+    margin-top:-100vh;
+  }
+  
+  .fifthLayout {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    height: 100%;
+  }
+ 
+  .fifthLayoutAnimation {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    height: 100%;
+    transition: all 500ms;
+    margin-top:-100vh;
+  }
+  
+  .sixthLayout {
+    min-height: 100vh;
+    height: 100%;
+    scroll-snap-align: start;
+  }
+  
+  .sixthLayoutAnimation {
+    min-height: 100vh;
+    height: 100%;
+    scroll-snap-align: start;
+    transition: all 500ms;
+    margin-top:-100vh;
+  }
+  
+/* .customDownNavigation{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 14px;
+    transform: translateX(-50%);
+}
+.customDownNavigationhide{
+    display: none;
+} */
+.secondDownArrow{
+    display:none;
+}
+.secondDownArrowView{
+    display:block;
+}
