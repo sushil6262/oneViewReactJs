@@ -6,4 +6,10 @@
 }
 .companyTextFontWeight{
     font-weight: 900;
+    font-size: 5em;
+    margin-bottom: 4%;
+}
+.thankyou{
+    font-size: 50px;
+    font-weight: 900;
 }
