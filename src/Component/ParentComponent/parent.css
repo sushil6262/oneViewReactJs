@@ -1,5 +1,6 @@
 .row.customRow {
     margin: 0;
+    justify-content: center;
   }
   
   .customBlue {
@@ -14,8 +15,8 @@
   }
   @media screen and (max-width: 768px) {
     .customLogo {
-        width: 20%;
-        padding-top: 0;
+        width: 132px;
+        padding-top: 14px;
         padding-left: 0;
       }
   }
@@ -29,7 +30,7 @@
   }
   @media screen and (max-width: 768px) {
     .heading1st {
-        font-size:16px;
+        font-size:2em;
         padding-left: 0;
       }
   }
@@ -41,7 +42,7 @@
   }
   @media screen and (max-width: 768px) {
     .heading2nd {
-        font-size:16px;
+        font-size:20px;
         padding-left: 0;
       }
   }
@@ -108,6 +109,32 @@
     scroll-snap-align: start;
     height: 100%;
   }
+@media screen and (max-width:768px){
+  .secondLayout>.inputContent {
+    padding-top:92px !important;
+  }
+}
+@media screen and (max-width:768px){
+  .ThirdLayout>.inputContent {
+    padding-top:92px !important;
+  }
+}
+@media screen and (max-width:768px){
+  .fourthLayout>.inputContent {
+    padding-top:92px !important;
+  }
+}
+@media screen and (max-width:768px){
+  .fifthLayout>.inputContent {
+    padding-top:100px !important;
+  }
+}
+ 
+@media screen and (max-width:768px){
+  .sixthLayout>.inputContent {
+    padding-top:92px !important;
+  }
+}
  
   .secondLayoutAnimation {
     min-height: 100vh;
@@ -126,13 +153,19 @@
   
   
   .imglogo {
-    width: 74px;
+    width: 110px;
     display: block;
     /* position: absolute; */
     padding-top: 20px;
-    padding-left: 20px;
     cursor: pointer;
     transition: all 500ms;
+  }
+  @media screen and (max-width: 768px) {
+    .imglogo {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
   }
   
   .inputContent {
@@ -172,6 +205,9 @@
         text-align: center;
         margin: 0;
     }
+  }
+  .tokenValuestyle{
+    cursor: pointer;
   }
   @media screen and (max-width: 768px) {
     .tokenValuestyle {
@@ -253,4 +289,56 @@
 }
 .secondDownArrowView{
     display:block;
+}
+@media screen and (max-width:575px){
+  .displayHide {
+    display:none;
+  }
+}
+@media screen and (max-width: 768px)
+{
+  .ThirdLayout>.inputContent {
+    padding-top: 40px !important;
+}
+}
+@media screen and (max-width: 768px)
+{
+  .tokenValueHide{
+    display:none;
+}
+}
+@media screen and (max-width: 768px)
+{
+  .fifthLayout>.inputContent {
+    padding-top: 48px !important;
+}
+}
+.deviceresponsive{
+  display: flex;
+}
+.DRcell{
+  padding: 4px;
+  font-size: 12px;
+  box-shadow: 0 0 6px -1px #1A75BC;
+  margin: 20px;
+  border-radius: 4px;
+  width: 316px;
+  padding-top: 24px !important;
+  padding-bottom: 14px !important;
+  height: 90px;
+}
+.DRtext{
+  font-weight: 900;
+  margin: 0;
+  font-size: 20px;
+}
+.DRNUmber{
+  margin: 0;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px)
+{
+  .mobileDisplay{
+    display:none;
+}
 }
