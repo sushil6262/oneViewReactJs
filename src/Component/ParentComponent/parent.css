@@ -83,6 +83,7 @@
     scroll-snap-align: start;
     padding-bottom: 12px;
     min-height: 100vh;
+    transition: all 500ms;
   }
   .firstLayoutAnimation {
     height: 100%;
@@ -102,12 +103,14 @@
   
   .customDownNavigation {
     cursor: pointer;
+    text-align: center;
   }
   
   .secondLayout {
     min-height: 100vh;
     scroll-snap-align: start;
     height: 100%;
+    transition: all 500ms;
   }
 @media screen and (max-width:768px){
   .secondLayout>.inputContent {
@@ -154,7 +157,6 @@
   
   .imglogo {
     width: 110px;
-    display: block;
     /* position: absolute; */
     padding-top: 20px;
     cursor: pointer;
@@ -181,7 +183,24 @@
     height: 100%;
     min-height: 100vh;
     scroll-snap-align: start;
+    transition: all 500ms;
 
+  }
+  .doArrow{
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    right: 50px;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background: #dcdcdc;
+    border-radius: 100%;
+    transition: all 500ms;
+    cursor: pointer;
+  }
+  .doArrow:hover{
+    box-shadow: 0 0 4px #000;
   }
   
   .ThirdLayoutAnimation {
@@ -236,6 +255,7 @@
     min-height: 100vh;
     scroll-snap-align: start;
     height: 100%;
+    transition: all 500ms;
   }
 
   .fourthLayoutAnimation {
@@ -250,6 +270,7 @@
     min-height: 100vh;
     scroll-snap-align: start;
     height: 100%;
+    transition: all 500ms;
   }
  
   .fifthLayoutAnimation {
@@ -264,6 +285,7 @@
     min-height: 100vh;
     height: 100%;
     scroll-snap-align: start;
+    transition: all 500ms;
   }
   
   .sixthLayoutAnimation {
@@ -273,6 +295,7 @@
     transition: all 500ms;
     margin-top:-100vh;
   }
+  
   
 /* .customDownNavigation{
     position: absolute;
@@ -341,4 +364,11 @@
   .mobileDisplay{
     display:none;
 }
+}
+.backArrow{
+  color:#000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }

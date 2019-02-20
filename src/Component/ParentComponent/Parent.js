@@ -19,7 +19,8 @@ class Parent extends Component {
         fourthLayoutAnimation: true,
         fifthLayoutAnimation: true,
         sixthLayoutAnimation: true,
-        copyText:true
+        copyText: true,
+        backBtn:true
     }
     firstLayoutAnimation = () => {
         this.setState({
@@ -62,12 +63,18 @@ class Parent extends Component {
 
         })
     }
-    copyText=()=>{
+   
+    thirdLayoutAnimationa = () => {
         this.setState({
-            copyText:false
+            thirdLayoutAnimation: this.state.thirdLayoutAnimation
         })
     }
-    
+    copyText = () => {
+        this.setState({
+            copyText: false
+        })
+    }
+
     render() {
         return (
             <div>
@@ -147,9 +154,7 @@ class Parent extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row" style={{ height: "40px" }}>
-                        <div className="col"></div>
-                    </div>
+                    
                     <div className="">
                         <div className="customDownNavigation" onClick={this.firstLayoutAnimation}>
                             <p className="custumPara companyTextColor">Click To Proceed</p>
@@ -158,30 +163,37 @@ class Parent extends Component {
                     </div>
 
                 </div>
-                <div className={this.state.secoundLayoutAnimation ? "secondLayout" : "secondLayoutAnimation"}><img src={Logo}
-                    className="imglogo" alt="logo" />
+                <div className={this.state.secoundLayoutAnimation ? "secondLayout" : "secondLayoutAnimation"}>
+                    <div>
+                    <img src={Logo} className="imglogo" alt="logo" />
+                    <div className="doArrow" onClick={this.firstLayoutAnimation}><i className="fas fa-arrow-up backArrow"></i></div>
+                    </div>
                     <div className="inputContent">
                         <h1 className="companyTextColor companyTextFontWeight">Step: 1</h1>
                         <form>
                             <div className="form-group"><p className="companyTextColor textCenter">How Many GXTokens Would You Like To Purchase?                            &nbsp; &nbsp; &nbsp; &nbsp;
                                     <br /></p><input className="form-control" type="text"
-                                    placeholder="Enter Number of Tokens" /></div>
+                                    placeholder="Enter Number of Tokens" /> </div>
                         </form>
                         <p>Total Price (ETH) : </p>
                         <p>Total Price ($) : </p>
-                        <div className="row" style={{ height: "40px" }}>
-                            <div className="col"></div>
-                        </div>
+                        
                         <div className="">
-                            <div className="customDownNavigation" onClick={this.secoundLayoutAnimation}>
-                                <p className="custumPara companyTextColor">Click To Proceed with Payment</p>
-                                <p className="custumPara"><i className="fas fa-arrow-down companyTextColor"></i></p>
+                            <div className="customDownNavigation">
+                                <div onClick={this.secoundLayoutAnimation}>
+                                    <p className="custumPara companyTextColor">Click To Proceed with Payment</p>
+                                    <p className="custumPara"><i className="fas fa-arrow-down companyTextColor"></i></p>
+                                </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div className={this.state.thirdLayoutAnimation ? "ThirdLayout" : "ThirdLayoutAnimation"}><img src={Logo} className="imglogo" alt="logo" />
+                <div className={this.state.thirdLayoutAnimation ? "ThirdLayout" : "ThirdLayoutAnimation"}>
+                <div>
+                    <img src={Logo} className="imglogo" alt="logo" />
+                    <div className="doArrow" onClick={this.secoundLayoutAnimation}><i className="fas fa-arrow-up backArrow"></i></div>
+                    </div>
                     <div className="inputContent">
                         <h1 className="companyTextColor companyTextFontWeight">Step: 2</h1>
                         <p className="Customtext2 companyTextColor">How Do You Want To Pay?<br /></p>
@@ -217,56 +229,68 @@ class Parent extends Component {
                                         <h4 className="card-title Customtext">Credit Card</h4>
                                     </div>
                                 </div>
+                                
                             </div>
+                            
                         </div>
                     </div>
                 </div>
-                <div className={this.state.fourthLayoutAnimation ? "fourthLayout" : "fourthLayoutAnimation"}><img src={Logo} className="imglogo" alt="logo" />
+                <div className={this.state.fourthLayoutAnimation ? "fourthLayout" : "fourthLayoutAnimation"}>
+                <div>
+                    <img src={Logo} className="imglogo" alt="logo" />
+                    <div className="doArrow" onClick={this.thirdLayoutAnimation}><i className="fas fa-arrow-up backArrow"></i></div>
+                </div>
+                
                     <div className="inputContent">
                         <h1 className="companyTextColor companyTextFontWeight">Step: 3</h1>
                         <form>
                             <div className="form-group"><p className="companyTextColor textCenter">Where Should We Send The GXT?
-                           <br /></p><input className="form-control" type="text"
+                            <br /></p><input className="form-control" type="text"
                                     placeholder="Enter An ERC20 Compatible Address" /></div>
                         </form>
-                        <div className="row" style={{ height: "40px" }}>
-                            <div className="col"></div>
-                        </div>
+                        
                         <div className="row customRow">
                             <div className="col" style={{ padding: "0" }}>
-                                <div className="customDownNavigation">
-                                    <p className="custumPara companyTextColor" onClick={this.fourthLayoutAnimation}>Click To Proceed</p>
+                                <div className="customDownNavigation" onClick={this.fourthLayoutAnimation}>
+                                    <p className="custumPara companyTextColor">Click To Proceed</p>
                                     <p className="custumPara"><i className="fas fa-arrow-down companyTextColor"></i></p>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className={this.state.fifthLayoutAnimation ? "fifthLayout" : "fifthLayoutAnimation"}><img src={Logo} className="imglogo" alt="logo" />
+                <div className={this.state.fifthLayoutAnimation ? "fifthLayout" : "fifthLayoutAnimation"}>
+                <div>
+                    <img src={Logo} className="imglogo" alt="logo" />
+                    <div className="doArrow" onClick={this.fourthLayoutAnimation}><i className="fas fa-arrow-up backArrow"></i></div>
+                </div>
                     <div className="inputContent">
                         <h1 className="companyTextColor companyTextFontWeight">Step: 4</h1>
                         <p className="companyTextColor textCenter">Send (dyname value should be here)Ethereum To This Address</p>
-                        <div  onClick={this.copyText}>
-                        <ReactCopyButtonWrapper text="0xa969c1D98e4754Eff010A6daE217dC5c4a9c24aA">
-                            <p className="tokenValuestyle textJumble hint--bottom" aria-label={this.state.copyText?"Click to Copy":"Copied"}>0xa969c1D98e4754Eff010A6daE217dC5c4a9c24aA</p>
-                            
-                        </ReactCopyButtonWrapper>
+                        <div onClick={this.copyText}>
+                            <ReactCopyButtonWrapper text="0xa969c1D98e4754Eff010A6daE217dC5c4a9c24aA">
+                                <p className="tokenValuestyle textJumble hint--bottom" aria-label={this.state.copyText ? "Click to Copy" : "Copied"}>0xa969c1D98e4754Eff010A6daE217dC5c4a9c24aA</p>
+
+                            </ReactCopyButtonWrapper>
                         </div>
                         <img src={QrCode} className="orcode" alt="logo" />
-                        <div className="row" style={{ height: "40px" }}>
-                            <div className="col"></div>
-                        </div>
+                        
                         <div className="row customRow">
                             <div className="col" style={{ padding: "0" }}>
-                                <div className="customDownNavigation">
-                                    <p className="custumPara companyTextColor" onClick={this.fifthLayoutAnimation}>Click To Proceed</p>
+                                <div className="customDownNavigation" onClick={this.fifthLayoutAnimation}>
+                                    <p className="custumPara companyTextColor">Click To Proceed</p>
                                     <p className="custumPara"><i className="fas fa-arrow-down companyTextColor"></i></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className={this.state.sixthLayoutAnimation ? "sixthLayout" : "sixthLayoutAnimation"}><img src={Logo} className="imglogo" alt="logo" />
+                <div className={this.state.sixthLayoutAnimation ? "sixthLayout" : "sixthLayoutAnimation"}>
+                <div>
+                    <img src={Logo} className="imglogo" alt="logo" />
+                    <div className="doArrow" onClick={this.fifthLayoutAnimation}><i className="fas fa-arrow-up backArrow"></i></div>
+                </div>
                     <div className="inputContent">
                         <h1 className="companyTextColor companyTextFontWeight">Step: 5</h1>
                         <form>
@@ -274,15 +298,14 @@ class Parent extends Component {
                                     <br /></p><input className="form-control" type="text"
                                     placeholder="Enter the txnHASH" /></div>
                         </form>
-                        <div className="row" style={{ height: "40px" }}>
-                            <div className="col"></div>
-                        </div>
+                        
                         <div className="row customRow">
                             <div className="col" style={{ padding: "0" }}>
-                                <div className="customDownNavigation">
-                                    <p className="custumPara companyTextColor" onClick={this.sixthLayoutAnimation}>Click To Proceed</p>
+                                <div className="customDownNavigation" onClick={this.sixthLayoutAnimation}>
+                                    <p className="custumPara companyTextColor">Click To Proceed</p>
                                     <p className="custumPara"><i className="fas fa-arrow-down companyTextColor"></i></p>
                                 </div>
+
                             </div>
                         </div>
                     </div>
